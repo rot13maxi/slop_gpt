@@ -1,0 +1,23 @@
+{
+  "name": "bitcoin-pleb-slop",
+  "version": "1.0.0",
+  "description": "Bitcoin pleb slop maximalism generator",
+  "scripts": {
+    "build:inline-webui": "node scripts/build-inline-webui.js",
+    "corpus:init": "python3 data_gen/prepare_corpus.py init",
+    "corpus:fetch": "python3 data_gen/prepare_corpus.py fetch",
+    "corpus:filter": "python3 data_gen/prepare_corpus.py filter",
+    "corpus:rewrite": "python3 data_gen/prepare_corpus.py rewrite",
+    "corpus:build": "python3 data_gen/prepare_corpus.py build",
+    "corpus:build:clean": "python3 data_gen/prepare_corpus.py build --use-filtered",
+    "corpus:build:claims": "python3 data_gen/prepare_corpus.py build --use-claims",
+    "corpus:all": "python3 data_gen/prepare_corpus.py all",
+    "test": "playwright test web-ui/test.spec.js web-ui/inference.spec.js web-ui/inline.spec.js web-ui/ultra.spec.js",
+    "build:ultra-inline-webui": "node scripts/build-ultra-inline-webui.js",
+    "prepare:inscription-files": "node scripts/prepare-inscription-files.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "terser": "5.48.0"
+  }
+}

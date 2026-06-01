@@ -1,0 +1,69 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Model weights (large files, can be regenerated)
+*.pt
+*.pth
+*.slop
+!pleb.slop
+web-ui/*.slop
+
+# Jupyter notebooks
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Training data (large, not for publishing)
+corpus.txt
+rewritten_corpus.txt
+data_gen/llm_refined/*.txt
+data_gen/inbox/text/
+data_gen/inbox/urls.txt
+
+# Backup files
+*_old.py
+*_backup.py
+
+# Node.js
+node_modules/
+package-lock.json
+test-results/
+
+# Local build/test sandboxes
+build/
+test-env/
+dist/
+
+# Corpus inbox/fetched source material
+data_gen/inbox/text/
+data_gen/raw/
+data_gen/corpus_report.json
+data_gen/filter_manifest.json
+data_gen/filtered_chunks/
+data_gen/claim_chunks/
+data_gen/rewrite_responses/
+data_gen/rewrite_manifest.json
+vocab.txt
