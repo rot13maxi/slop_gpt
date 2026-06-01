@@ -207,4 +207,4 @@ Regtest checks are skipped unless the required environment variables are set.
 
 ## License
 
-Internal use only.
+MIT
